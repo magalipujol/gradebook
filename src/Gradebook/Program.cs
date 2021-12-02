@@ -12,7 +12,7 @@ namespace Gradebook
             book.AddGrade(20.6);
 
             var average = book.CalculateAverage();
-            System.Console.WriteLine(book.ShowStatistics());
+            System.Console.WriteLine(book.ComputeStatistics());
         }
     }
 }

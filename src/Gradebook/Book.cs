@@ -34,9 +34,9 @@ namespace Gradebook
             return grades.Min();
         }
 
-        public String ShowStatistics() {
-            return $"{this.student}'s grades\nAverage: {this.CalculateAverage():N2} \nLowest grade: {this.FindLower()} \nHighest grade: {this.FindHigher()}";
-        }
+        public Statistic ComputeStatistics() {
+            return new Statistic(this.CalculateAverage(), this.FindHigher(), this.FindLower());
+            }
 
     }
 }
