@@ -97,3 +97,9 @@ C:\Users\Gali\gradebook\test\Gradebook.tests\obj\Debug\net6.0\Gradebook.tests.dl
 C:\Users\Gali\gradebook\test\Gradebook.tests\obj\Debug\net6.0\ref\Gradebook.tests.dll
 C:\Users\Gali\gradebook\test\Gradebook.tests\obj\Debug\net6.0\Gradebook.tests.pdb
 C:\Users\Gali\gradebook\test\Gradebook.tests\obj\Debug\net6.0\Gradebook.tests.genruntimeconfig.cache
+C:\Users\Gali\gradebook\test\Gradebook.tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\Gali\gradebook\test\Gradebook.tests\bin\Debug\net6.0\Gradebook.deps.json
+C:\Users\Gali\gradebook\test\Gradebook.tests\bin\Debug\net6.0\Gradebook.runtimeconfig.json
+C:\Users\Gali\gradebook\test\Gradebook.tests\bin\Debug\net6.0\Gradebook.exe
+C:\Users\Gali\gradebook\test\Gradebook.tests\bin\Debug\net6.0\Gradebook.dll
+C:\Users\Gali\gradebook\test\Gradebook.tests\bin\Debug\net6.0\Gradebook.pdb

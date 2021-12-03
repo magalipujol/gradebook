@@ -14,9 +14,9 @@ public class BookTests
 
         var result = book.ComputeStatistics();
 
-        Assert.Equal(85.6, result.Average);
-        Assert.Equal(90.5, result.Highest);
-        Assert.Equal(77.3, result.Lowest);
+        Assert.Equal(85.6, result.Average, 1);
+        Assert.Equal(90.5, result.Highest, 1);
+        Assert.Equal(77.3, result.Lowest, 1);
 
 
     }
