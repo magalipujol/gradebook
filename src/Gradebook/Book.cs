@@ -3,16 +3,16 @@ namespace Gradebook
     public class Book
     {
         private List<double> grades;
-        private String student;
+        public String Student;
         public Book()
         {
-            this.student = "";
+            this.Student = "";
             this.grades = new List<double>();
         }
         public Book(String student)
         {
             grades = new List<double>();
-            this.student = student;
+            this.Student = student;
         }
         public void AddGrade(double grade)
         {
