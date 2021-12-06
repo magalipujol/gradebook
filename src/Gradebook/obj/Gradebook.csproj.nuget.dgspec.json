@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\magal\\OneDrive\\Documentos\\-.-\\gradebook\\src\\Gradebook\\Gradebook.csproj": {}
+    "C:\\Users\\Gali\\gradebook\\src\\Gradebook\\Gradebook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\magal\\OneDrive\\Documentos\\-.-\\gradebook\\src\\Gradebook\\Gradebook.csproj": {
+    "C:\\Users\\Gali\\gradebook\\src\\Gradebook\\Gradebook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\magal\\OneDrive\\Documentos\\-.-\\gradebook\\src\\Gradebook\\Gradebook.csproj",
+        "projectUniqueName": "C:\\Users\\Gali\\gradebook\\src\\Gradebook\\Gradebook.csproj",
         "projectName": "Gradebook",
-        "projectPath": "C:\\Users\\magal\\OneDrive\\Documentos\\-.-\\gradebook\\src\\Gradebook\\Gradebook.csproj",
-        "packagesPath": "C:\\Users\\magal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\magal\\OneDrive\\Documentos\\-.-\\gradebook\\src\\Gradebook\\obj\\",
+        "projectPath": "C:\\Users\\Gali\\gradebook\\src\\Gradebook\\Gradebook.csproj",
+        "packagesPath": "C:\\Users\\Gali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gali\\gradebook\\src\\Gradebook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\magal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Gali\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
