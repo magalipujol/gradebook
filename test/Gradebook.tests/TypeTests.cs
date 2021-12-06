@@ -2,9 +2,27 @@ using Xunit;
 
 namespace Gradebook.tests;
 
+// this delegate describes any method that returns and takes a string.
+public delegate string WriteLogDelegate(string logMessage);
+
 public class TypeTests
 {
     public void DoNothing() { }
+    [Fact]
+    public void WriteLogDelegateCanPointToMethod()
+    {
+        WriteLogDelegate log = ReturnMessage;
+
+        // this points log to the method
+        log += ReturnMessage;
+
+        var result = log("gugis");
+        Assert.Equal("gugis", result);
+    }
+    // this is a method that matches de conditions of the delegate
+    string ReturnMessage(string message) {
+        return message;
+    }
 
     [Fact]
     public void CanPassByReferenceValueTypes()
@@ -24,14 +42,17 @@ public class TypeTests
 
     }
 
-    public string MakeUppercase(string smt) {
+    public string MakeUppercase(string smt)
+    {
         // The method doesn't change the string invoked on, it returns a copy of the string converted to upper
         return smt.ToUpper();
     }
-    public void SetInt(ref int x) {
+    public void SetInt(ref int x)
+    {
         x = 42;
-           }
-    public int GetInt() {
+    }
+    public int GetInt()
+    {
         return 3;
     }
 
@@ -79,7 +100,8 @@ public class TypeTests
         return new Book(name);
     }
 
-    private void GetBookSetName(ref Book book, string name) {
+    private void GetBookSetName(ref Book book, string name)
+    {
         book = new Book(name);
     }
 

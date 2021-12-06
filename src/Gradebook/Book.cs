@@ -2,13 +2,40 @@ namespace Gradebook
 {
     public class Book
     {
+
         public List<double> grades;
-        public String Student;
-        public Book()
+        // it can only be changed in the constructor
+        // good practice: name in uppercase
+        public const string CATEGORY = "";
+        public Book(string student)
         {
-            this.Student = "";
             this.grades = new List<double>();
+            Student = student;
         }
+
+        public string Student
+        {
+            get;
+            // set can be a private property, so it can only be set with the constructor
+            // it's called a readonly property
+            set;
+        }
+        // * this is the long way to do the above code
+        // private String student;
+        // public string Student
+        // {
+        //     get
+        //     {
+        //         return student;
+        //     }
+        //     set
+        //     {
+        //         if (!String.IsNullOrEmpty(value))
+        //         {
+        //             student = value;
+        //         }
+        //     }
+        // }
 
         public void AddLetterGrade(char letter)
         {
@@ -32,11 +59,6 @@ namespace Gradebook
                 default:
                     break;
             }
-        }
-        public Book(String student)
-        {
-            grades = new List<double>();
-            this.Student = student;
         }
         public void AddGrade(double grade)
         {
@@ -71,11 +93,12 @@ namespace Gradebook
             return new Statistic(this.CalculateAverage(), this.FindHigher(), this.FindLower(), this.ComputeLetterGrades());
         }
 
-        public List<char> ComputeLetterGrades() {
+        public List<char> ComputeLetterGrades()
+        {
             var result = new List<char>();
             foreach (var grade in grades)
             {
-             switch (grade)
+                switch (grade)
                 {
                     case var d when d >= 90:
                         result.Add('A');

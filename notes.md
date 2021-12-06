@@ -7,6 +7,7 @@
 - To know the type of a variable (value or reference), press <kbd>F12</kbd>, and if it's defined as a 'struct', it's a value type, and if it's defined as a 'class', it's a reference type.
 For example, Boolean is a value type of C#, and bool is the .Net shortcut.
 - .Net has a garbage collector, that keeps that of all the object and variables I create, and knows when there's no variables and no fields that are pointing to or using that object, and cleans up that space. So I don't have to tell .Net that i'm finished using an object and tell the runtime to delete that object of free up the memory.
+- A delegate is a reference type variable that has the reference to a method.
 
 - In order to run the code, I have to be in the folder of the project and press <kbd>Ctrl</kbd> + <kbd>F5</kbd> or execute the following command
 ~~~
