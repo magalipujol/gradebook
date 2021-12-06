@@ -4,6 +4,7 @@ namespace Gradebook.tests;
 
 public class BookTests
 {
+    public void DoNothing() { }
     [Fact]
     public void BookCalculatesGradesStats()
     {
@@ -17,7 +18,6 @@ public class BookTests
         Assert.Equal(85.6, result.Average, 1);
         Assert.Equal(90.5, result.Highest, 1);
         Assert.Equal(77.3, result.Lowest, 1);
-
-
+        Assert.Equal('B', result.Letters[0]);
     }
 }
