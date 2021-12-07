@@ -14,14 +14,19 @@ public class TypeTests
         WriteLogDelegate log = ReturnMessage;
 
         // this points log to the method
-        log += ReturnMessage;
+        log += ReturnAnotherMessage;
 
+        // a multicast delegate invokes de methods in the same order in which they're added
+        // the value that is returned is the value of the last method
         var result = log("gugis");
-        Assert.Equal("gugis", result);
+        Assert.Equal("GUGIS", result);
     }
     // this is a method that matches de conditions of the delegate
     string ReturnMessage(string message) {
         return message;
+    }
+    string ReturnAnotherMessage(string message) {
+        return message.ToUpper();
     }
 
     [Fact]

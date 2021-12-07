@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gali\\gradebook\\src\\Gradebook\\Gradebook.csproj": {}
+    "C:\\Users\\Gali\\Documents\\-.-\\gradebook\\src\\Gradebook\\Gradebook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gali\\gradebook\\src\\Gradebook\\Gradebook.csproj": {
+    "C:\\Users\\Gali\\Documents\\-.-\\gradebook\\src\\Gradebook\\Gradebook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gali\\gradebook\\src\\Gradebook\\Gradebook.csproj",
+        "projectUniqueName": "C:\\Users\\Gali\\Documents\\-.-\\gradebook\\src\\Gradebook\\Gradebook.csproj",
         "projectName": "Gradebook",
-        "projectPath": "C:\\Users\\Gali\\gradebook\\src\\Gradebook\\Gradebook.csproj",
+        "projectPath": "C:\\Users\\Gali\\Documents\\-.-\\gradebook\\src\\Gradebook\\Gradebook.csproj",
         "packagesPath": "C:\\Users\\Gali\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gali\\gradebook\\src\\Gradebook\\obj\\",
+        "outputPath": "C:\\Users\\Gali\\Documents\\-.-\\gradebook\\src\\Gradebook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gali\\AppData\\Roaming\\NuGet\\NuGet.Config"
