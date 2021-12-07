@@ -5,7 +5,23 @@ namespace Gradebook
     {
         static void Main(string[] args)
         {
-            var book = new Book("Gugu");
+            var book = new InMemoryBook("Gugu");
+            book.GradeAdded += OnGradeAdded;
+            System.Console.WriteLine(book.Student);
+            EnterGrades(book);
+
+            var stats = book.ComputeStatistics();
+            System.Console.WriteLine($"The average grade is {stats.Average:N1}");
+            System.Console.WriteLine($"The highest grade is {stats.Highest}");
+            System.Console.WriteLine($"The lowest grade is {stats.Lowest}");
+            System.Console.WriteLine("Letter grades: ");
+            printCharList(stats.Letters);
+
+        }
+        // the method EnterGrades was written on the main class
+        // I only extracted it
+        private static void EnterGrades(Book book)
+        {
             while (true)
             {
                 Console.WriteLine("Enter  a grade or 'q' to quit");
@@ -32,14 +48,6 @@ namespace Gradebook
                     Console.WriteLine("**");
                 }
             }
-
-            var stats = book.ComputeStatistics();
-            System.Console.WriteLine($"The average grade is {stats.Average:N1}");
-            System.Console.WriteLine($"The highest grade is {stats.Highest}");
-            System.Console.WriteLine($"The lowest grade is {stats.Lowest}");
-            System.Console.WriteLine("Letter grades: ");
-            printCharList(stats.Letters);
-
         }
 
         static void printCharList(List<char> list)
@@ -48,6 +56,11 @@ namespace Gradebook
             {
                 Console.WriteLine(letter);
             }
+        }
+
+        static void OnGradeAdded(object sender, EventArgs e)
+        {
+            Console.WriteLine("grade added");
         }
     }
 }

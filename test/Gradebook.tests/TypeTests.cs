@@ -100,17 +100,17 @@ public class TypeTests
         Assert.Equal("Student 2", book2.Student);
     }
 
-    private Book GetBook(string name)
+    private InMemoryBook GetBook(string name)
     {
-        return new Book(name);
+        return new InMemoryBook(name);
     }
 
-    private void GetBookSetName(ref Book book, string name)
+    private void GetBookSetName(ref InMemoryBook book, string name)
     {
-        book = new Book(name);
+        book = new InMemoryBook(name);
     }
 
-    private void SetName(Book book, string name)
+    private void SetName(InMemoryBook book, string name)
     {
         book.Student = name;
     }
